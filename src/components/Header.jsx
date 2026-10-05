@@ -69,16 +69,14 @@ export const Header = () => {
           -------------------------------------------------------------------- */}
       <div className="header-main-nav">
         {/* Mobile menu hamburger button */}
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="header-mobile-toggle"
-            aria-label="Toggle Navigation Drawer"
-          >
-            {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="header-mobile-toggle"
+          aria-label="Toggle Navigation Drawer"
+        >
+          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
 
         {/* Zone 1: Wordmark Logo */}
         <div>
@@ -87,8 +85,7 @@ export const Header = () => {
             onClick={() => handleNavigate('home')}
             className="header-logo-btn"
           >
-            BinAsor
-          </button>
+          BinAsor</button>
         </div>
 
         {/* Zone 2: Navigation Links */}

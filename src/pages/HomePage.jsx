@@ -8,49 +8,48 @@
 
 import React from 'react';
 import { HeroCarousel } from '../components/HeroCarousel';
-import { FeatureBar } from '../components/FeatureBar';
 import { CategorySection } from '../components/CategorySection';
 import { FeaturedProducts } from '../components/FeaturedProducts';
-import { SummerSaleBanner } from '../components/SummerSaleBanner';
+import { Home_Banner } from '../components/Home_Banner';
 
 import './HomePage.css';
 
 export const HomePage = () => {
-  return (
-    <div className="home-page">
-      {/* ====================================================================
+    return (
+        <div className="home-page">
+            {/* ====================================================================
           1. TOP SUMMER PROMOTIONAL SECTION
           ==================================================================== */}
-      <SummerSaleBanner />
+            <Home_Banner />
 
-      {/* ====================================================================
+            {/* ====================================================================
           2. LUXURY VALUE PROPOSITIONS & GUARANTEES
           ==================================================================== */}
-      {/*<FeatureBar />*/}
+            {/*<FeatureBar />*/}
 
-      {/* ====================================================================
+            {/* ====================================================================
           3. EDITORIAL HERO CAROUSEL
           ==================================================================== */}
-      {/*<HeroCarousel />*/}
+            {/*<HeroCarousel />*/}
 
-      
 
-      {/* ====================================================================
+
+            {/* ====================================================================
           4. DEPARTMENT & CATEGORY DIRECTORY
           ==================================================================== */}
-      <CategorySection />
+            <CategorySection />
 
-      {/* ====================================================================
+            {/* ====================================================================
           5. CURATED BESTSELLERS & FEATURED APPAREL
           ==================================================================== */}
-      <FeaturedProducts />
+            <FeaturedProducts />
 
-      {/* ====================================================================
+            {/* ====================================================================
           6. TRUST BADGES & VERIFIED REPUTATION
           ==================================================================== */}
-      
-    </div>
-  );
+
+        </div>
+    );
 };
 
 export default HomePage;

@@ -15,9 +15,9 @@ const summerSaleImg1 = '/assets/images/summer_sale_banner_1791180091588.jpg';
 const summerSaleImg2 = '/assets/images/summer_resort_linen_1791181012178.jpg';
 const summerSaleImg3 = '/assets/images/hero_fashion_model_1791180041478.jpg';
 const summerSaleImg4 = '/assets/images/cat_men_fashion_1791180111441.jpg';
-import './SummerSaleBanner.css';
+import './Home_Banner.css';
 
-export const SummerSaleBanner = () => {
+export const Home_Banner = () => {
   /* ==========================================================================
      GLOBAL STORE HOOKS
      ========================================================================== */
@@ -68,17 +68,14 @@ export const SummerSaleBanner = () => {
      RENDER SUMMER SALE BANNER
      ========================================================================== */
   return (
-    <section className="summer-sale-wrap">
-      <div className="summer-sale-card">
+    <section className="Banner_card_wrap ">
+      <div className="Banner_card">
         {/* Left Column: Fixed Promotional Message */}
         <div className="summer-sale-copy">
           <span className="summer-sale-tag">Summer Sale</span>
 
           <h2 className="summer-sale-heading">Up to 50% Off</h2>
 
-          <p className="summer-sale-desc">
-            Curated selection of warm-weather linens, structured tailoring, and timeless seasonal staples.
-          </p>
 
           <div>
             <Button
@@ -88,7 +85,7 @@ export const SummerSaleBanner = () => {
               icon={<ArrowRight size={14} />}
               iconPosition="right"
             >
-              Shop the Sale
+              Shop
             </Button>
           </div>
         </div>
@@ -155,4 +152,4 @@ export const SummerSaleBanner = () => {
   );
 };
 
-export default SummerSaleBanner;
+export default Home_Banner;

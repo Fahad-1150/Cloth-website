@@ -5,21 +5,22 @@
 /* --------------------------------------------------------------------------
    Container (Full-Width Edge to Edge)
    -------------------------------------------------------------------------- */
-.summer-sale-wrap {
+.Banner_card_wrap {
   width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 0;
+  background-color: transparent;
 }
 
 @media (min-width: 640px) {
-  .summer-sale-wrap {
+  .Banner_card_wrap {
     padding: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .summer-sale-wrap {
+  .Banner_card_wrap {
     padding: 0;
   }
 }
@@ -27,7 +28,7 @@
 /* --------------------------------------------------------------------------
    Split Banner Card (Edge-to-Edge)
    -------------------------------------------------------------------------- */
-.summer-sale-card {
+.Banner_card {
   position: relative;
   overflow: hidden;
   border-radius: 0;
@@ -224,7 +225,7 @@
   transition: all 0.2s;
 }
 
-.summer-sale-card:hover .summer-sale-arrow {
+.Banner_card:hover .summer-sale-arrow {
   opacity: 1;
 }
 
