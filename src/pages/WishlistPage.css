@@ -1,0 +1,81 @@
+/* ==========================================================================
+   BinAsor ATELIER - WISHLIST PAGE STYLES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Container & Header
+   -------------------------------------------------------------------------- */
+.wishlist-page-wrapper {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 2.5rem 0 5rem;
+}
+
+.wishlist-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .wishlist-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wishlist-container {
+    padding: 0 2rem;
+  }
+}
+
+.wishlist-header {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wishlist-eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.wishlist-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #0a0a0a;
+}
+
+.wishlist-subtitle {
+  font-size: 0.75rem;
+  color: #737373;
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   Wishlist Product Grid
+   -------------------------------------------------------------------------- */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wishlist-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   BinAsor ATELIER - TOAST NOTIFICATION COMPONENT STYLES
+   ========================================================================== */
+
+.toast-container {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+  max-width: 24rem;
+  width: 100%;
+}
+
+.toast-card {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #262626;
+  font-size: 0.75rem;
+  font-weight: 500;
+  animation: toastSlideIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.toast-close-btn {
+  background: none;
+  border: none;
+  color: #737373;
+  padding: 0.25rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s;
+}
+
+.toast-close-btn:hover {
+  color: #ffffff;
+}

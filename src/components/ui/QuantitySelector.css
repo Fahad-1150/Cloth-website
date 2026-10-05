@@ -1,0 +1,56 @@
+/* ==========================================================================
+   REUSABLE QUANTITY SELECTOR COMPONENT STYLES
+   ========================================================================== */
+
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-color: #ffffff;
+  overflow: hidden;
+  user-select: none;
+}
+
+.qty-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.75rem;
+  background: transparent;
+  border: none;
+  color: #525252;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.qty-btn:hover:not(:disabled) {
+  background-color: #f5f5f5;
+  color: #0a0a0a;
+}
+
+.qty-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.qty-display {
+  width: 2.5rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #171717;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Compact size option for cart drawer / tables */
+.qty-compact .qty-btn {
+  width: 1.875rem;
+  height: 2rem;
+}
+
+.qty-compact .qty-display {
+  width: 1.875rem;
+  font-size: 0.75rem;
+}

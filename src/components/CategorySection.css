@@ -1,0 +1,147 @@
+/* ==========================================================================
+
+BinAsor ATELIER - CATEGORY SECTION COMPONENT STYLES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Section Container
+   -------------------------------------------------------------------------- */
+.category-section-wrap {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .category-section-wrap {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-section-wrap {
+    padding: 4rem 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Header Row
+   -------------------------------------------------------------------------- */
+.category-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.category-main-heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #0a0a0a;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 640px) {
+  .category-main-heading {
+    font-size: 2.25rem;
+  }
+}
+
+.category-viewall-btn {
+  background: none;
+  border: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #525252;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  transition: color 0.15s;
+}
+
+.category-viewall-btn:hover {
+  color: #0a0a0a;
+}
+
+/* --------------------------------------------------------------------------
+   Categories 5-Column Grid
+   -------------------------------------------------------------------------- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.category-media-box {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+}
+
+.category-card:hover .category-media-box {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+}
+
+.category-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover .category-card-img {
+  transform: scale(1.05);
+}
+
+.category-card-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #171717;
+  transition: color 0.15s;
+}
+
+.category-card:hover .category-card-name {
+  color: #0a0a0a;
+}
+
+.category-card-count {
+  font-size: 0.75rem;
+  color: #737373;
+  font-weight: 300;
+  margin-top: 0.125rem;
+}

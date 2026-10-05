@@ -1,0 +1,37 @@
+/* ==========================================================================
+   REUSABLE RATING STARS COMPONENT STYLES
+   ========================================================================== */
+
+.rating-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.rating-stars-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.rating-star-filled {
+  color: #f59e0b;
+  fill: #f59e0b;
+}
+
+.rating-star-empty {
+  color: #e5e5e5;
+  fill: #e5e5e5;
+}
+
+.rating-score {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #171717;
+}
+
+.rating-reviews {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #a3a3a3;
+}

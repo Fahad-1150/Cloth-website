@@ -1,0 +1,65 @@
+/* ==========================================================================
+   REUSABLE BADGE COMPONENT STYLES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Base Badge Style
+   -------------------------------------------------------------------------- */
+.badge-base {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   Variants
+   -------------------------------------------------------------------------- */
+/* Sale / Discount Pill */
+.badge-sale {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #ffe4e6;
+}
+
+/* New Arrival Pill */
+.badge-new {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #e0f2fe;
+}
+
+/* Trending / Hot Pill */
+.badge-hot {
+  background-color: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fef3c7;
+}
+
+/* Stock Status Pill - In Stock */
+.badge-instock {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #d1fae5;
+}
+
+/* Stock Status Pill - Out of Stock */
+.badge-outofstock {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fee2e2;
+}
+
+/* Neutral Minimal Pill */
+.badge-neutral {
+  background-color: #f5f5f5;
+  color: #525252;
+  border: 1px solid #e5e5e5;
+}

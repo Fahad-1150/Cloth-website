@@ -1,0 +1,43 @@
+/* ==========================================================================
+   REUSABLE BREADCRUMB COMPONENT STYLES
+   ========================================================================== */
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #737373;
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumb-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #737373;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #0a0a0a;
+}
+
+.breadcrumb-separator {
+  color: #d4d4d4;
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumb-current {
+  color: #171717;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 18rem;
+}
