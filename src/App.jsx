@@ -42,7 +42,7 @@ const AppContent = () => {
   return (
     <div className="app-shell">
       {/* 3-Zone Global Navigation Bar */}
-      <Header />
+      {activePage !== 'admin' && <Header />}
 
       {/* Dynamic Main Viewport */}
       <main className="app-main">
@@ -59,7 +59,7 @@ const AppContent = () => {
       </main>
 
       {/* Global Footer */}
-      <Footer />
+      {activePage !== 'admin' && <Footer />}
 
       {/* Floating Interactive Drawers & Overlays */}
       <CartDrawer />

@@ -11,6 +11,32 @@ export const catWomenImg = '/assets/images/cat_women_fashion_1791180101627.jpg';
 export const catMenImg = '/assets/images/cat_men_fashion_1791180111441.jpg';
 export const catBagImg = '/assets/images/cat_leather_bag_1791180122206.jpg';
 
+/* ============================================================================
+   ADMIN DASHBOARD DEMO DATA
+   Keep dashboard-only presentation data beside the rest of the mock catalog.
+   ============================================================================ */
+export const ADMIN_SALES_DATA = [
+  { name: '22 Jul', income: 4000, expense: 2400 },
+  { name: '23 Jul', income: 3000, expense: 1398 },
+  { name: '24 Jul', income: 2000, expense: 2800 },
+  { name: '25 Jul', income: 2780, expense: 3908 },
+  { name: '26 Jul', income: 3890, expense: 2480 },
+  { name: '27 Jul', income: 3390, expense: 2800 },
+  { name: '28 Jul', income: 4490, expense: 3300 },
+  { name: '29 Jul', income: 5200, expense: 2900 },
+];
+
+export const ADMIN_TARGET_DATA = [
+  { name: 'Completed', value: 75, color: '#047857' },
+  { name: 'Remaining', value: 25, color: '#e7e5e4' },
+];
+
+export const ADMIN_OFFERS = [
+  { name: '40% Discount Offer', date: 'Expires 05 Aug 2026', progress: 75 },
+  { name: '100 Taka Coupon', date: 'Expires 10 Sep 2026', progress: 90 },
+  { name: 'Stock Out Sale', date: 'Upcoming 14 Sep 2026', progress: 30, color: '#047857' },
+];
+
 /* ==========================================================================
    INITIAL CATEGORIES
    ========================================================================== */
